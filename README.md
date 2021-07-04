@@ -24,3 +24,6 @@ To download the key pair, choose Download .
 #### read sql in jupyter
 Como referencia para la lectura de sql en jupyter se utilizo como referencia:
 https://towardsdatascience.com/heres-how-to-run-sql-in-jupyter-notebooks-f26eb90f3259
+
+### Youtube
+https://youtu.be/yqVHEapWMCM
