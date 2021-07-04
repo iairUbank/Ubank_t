@@ -20,30 +20,6 @@ Open the Security credentials tab, and then choose Create access key.
 To see the new access key, choose Show. ...
 To download the key pair, choose Download .
 
-### groups 
-
-### import sql data
-https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.AnySource.html
-
-sudo apt install mysql-client-core-8.0
-
-aws rds modify-db-instance \
-    --db-instance-identifier AcmeRDS \
-    --backup-retention-period 1 \
-    --apply-immediately
-
-
-SELECT * from information_schema.user_privileges
-
-
-GRANT SESSION_VARIABLES_ADMIN ON *.* TO 'dbadmin'@'%';
-
-
-
-mysql --user=dbadmin --password --host=mydbinstance.cqornbg3nzt3.us-east-1.rds.amazonaws.com mydb < ./01import/ini.sql
-
-mysqlimport --local --compress --user=dbadmin  --password  --host=mydbinstance.cqornbg3nzt3.us-east-1.rds.amazonaws.com --fields-terminated-by=',' mydb ./data/*.csv
-
 
 #### read sql in jupyter
 Como referencia para la lectura de sql en jupyter se utilizo como referencia:
